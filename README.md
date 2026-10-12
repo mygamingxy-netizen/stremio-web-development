@@ -1,94 +1,43 @@
-<div align="center">
+# UragonTv - Android TV Live Streaming Platform
 
-<img src="/assets/images/stremio_symbol.png" width="90" alt="Stremio logo">
+**UragonTv** is a production-ready, native Android TV (Google TV / Android TV OS) live streaming application designed to play national, regional, and local live channels across the Philippines and international feeds.
 
-# Stremio Web
+---
 
-**Freedom to Stream** — the official web UI of [Stremio](https://www.stremio.com), a modern media center that's a one-stop solution for your video entertainment.
+## Key Features
 
-[![Build](https://github.com/Stremio/stremio-web/actions/workflows/build.yml/badge.svg)](https://github.com/Stremio/stremio-web/actions/workflows/build.yml)
-[![Github Page](https://img.shields.io/website?label=Page&logo=github&up_message=online&down_message=offline&url=https%3A%2F%2Fstremio.github.io%2Fstremio-web%2F)](https://stremio.github.io/stremio-web/development)
-[![Version](https://img.shields.io/github/package-json/v/Stremio/stremio-web/development?label=version&color=7b5bf5)](https://github.com/Stremio/stremio-web/releases)
-[![License](https://img.shields.io/github/license/Stremio/stremio-web?color=7b5bf5)](/LICENSE.md)
+- **Platform & Engine:**
+  - Built natively with **Kotlin** and **Jetpack Compose for TV** (`androidx.tv.material3`, `androidx.tv.foundation`).
+  - High-performance video playback with **Media3 ExoPlayer 1.5.1** (`HlsMediaSource` for `.m3u8`, MPEG-DASH `.mpd`, and progressive streams).
+  - Robust automatic reconnection logic and exponential backoff retry on buffering drops.
 
-**[🌐 Open the Web App](https://web.stremio.com)** · [Website](https://www.stremio.com) · [Report a bug](https://github.com/Stremio/stremio-web/issues/new/choose)
+- **TV-First Remote & D-Pad Optimization:**
+  - 100% directional D-Pad navigation (Up, Down, Left, Right, Center/OK, Back).
+  - **1.08x focus scale animation** with metallic gold glowing border (`2.dp #D4AF37`) and elevated shadow.
 
-<img alt="Stremio board" width="100%" src="https://github.com/user-attachments/assets/b3597fcc-ee53-4c4c-82be-457844135230" />
+- **Visual Design:**
+  - **Premium Dark Luxury Aesthetic**: Ultra-deep obsidian black (`#0B0C10`), metallic warm gold (`#D4AF37`), antique gold (`#FFD700`), and dark charcoal surfaces (`#1E1E24`).
+  - High-contrast typography designed for 10-foot viewing distances.
 
-</div>
+- **Dynamic M3U / JSON Stream Source Injector:**
+  - Parses live channels dynamically from local `assets/sources.m3u` or fallback `assets/channels.json`.
+  - `StreamSourceRepository` allows users to inject custom remote M3U playlist URLs or toggle presets directly from Settings.
 
-## ✨ Features
+- **Navigation & Screens:**
+  1. **Collapsible Navigation Sidebar**: Left-hand navigation rail (Home, Categories, Regions, Favorites, Search, Settings) that expands on focus and collapses to icon mode when browsing channels.
+  2. **Home Screen**: Featured hero banner with live channel preview metadata, followed by horizontal channel rows organized by category and popularity.
+  3. **Fullscreen Player**: Full-bleed live stream playback with non-intrusive On-Screen Display (OSD) overlay activated by D-Pad, quick channel picker drawer, aspect ratio toggle (Fit 16:9, Zoom, Stretch), and favorite bookmarking.
+  4. **Categories Screen**: Filter channels across National Networks, Regional, News, Sports, Entertainment, and Movies.
+  5. **Regions Screen**: Dedicated regional filtering covering Luzon (Bicol, Central Luzon, NCR), Visayas (Cebu, Iloilo), Mindanao (Davao, CDO), Nationwide, and International.
+  6. **Favorites Screen**: User-saved bookmarks persisted via SharedPreferences/DataStore.
+  7. **Search Screen**: D-Pad accessible on-screen virtual keyboard with instant channel search.
+  8. **Settings Screen**: Buffer profile selector (Low Latency / Standard / High Stability), auto-reconnect toggle, playlist source switcher, and engine diagnostics.
 
-- 🧩 **Addon-powered** — discover movies, series and channels from catalogs provided by [addons](https://web.stremio.com/#/addons)
-- 🔄 **Sync everywhere** — your library and Continue Watching follow your Stremio account across devices
-- 📺 **Casting** — play on the big screen via Chromecast
-- 💬 **Subtitles** — addon-provided or local, with customizable styling
-- ⌨️ **Keyboard-first player** — full playback control without touching the mouse
-- 🌍 **50+ languages** — community-translated via [stremio-translations](https://github.com/Stremio/stremio-translations)
-- 📱 **Installable** — runs as a standalone PWA
+---
 
-## 📸 Screenshots
+## Technical Specifications
 
-| Discover | Meta Details |
-|:---:|:---:|
-| ![Discover](https://github.com/user-attachments/assets/e89af0e8-8c53-4dac-a38a-464b5dfcf1a4) | ![Meta Details](https://github.com/user-attachments/assets/858a6946-d34a-4490-90c2-368b8714d501) |
-
-## 🛠 How it works
-
-The UI (this repo) is a React app, but the brains live in [stremio-core](https://github.com/Stremio/stremio-core) — Stremio's Rust engine compiled to WebAssembly and running in a Web Worker. The UI renders state, the core computes it. Playback goes through [stremio-video](https://github.com/Stremio/stremio-video), which picks the right player implementation for the environment.
-
-```mermaid
-flowchart LR
-    UI["React UI<br>(this repo)"] <--> Core["stremio-core<br>Rust → WASM, Web Worker"]
-    Core <--> API["Stremio API"]
-    Core <--> Addons["Addons"]
-    UI --> Video["stremio-video"]
-```
-
-## 🚀 Getting started
-
-You'll need [Node.js](https://nodejs.org) 22+ and [pnpm](https://pnpm.io/installation) 11+.
-
-```bash
-pnpm install
-pnpm start
-```
-
-The dev server runs at `http://localhost:8080`.
-
-| Command | Description |
-|---|---|
-| `pnpm start` | Development server with hot reload |
-| `pnpm run start-prod` | Development server in production mode |
-| `pnpm run build` | Production build |
-| `pnpm test` | Run tests |
-| `pnpm run lint` | Lint the source |
-| `pnpm run scan-translations` | Check for missing translation keys |
-
-### 🐳 Docker
-
-```bash
-docker build -t stremio-web .
-docker run -p 8080:8080 stremio-web
-```
-
-## 🤝 Contributing
-
-Bug reports and pull requests are welcome — [`good first issue`](https://github.com/Stremio/stremio-web/labels/good%20first%20issue) is a great place to start. Want Stremio in your language? Contribute to [stremio-translations](https://github.com/Stremio/stremio-translations). Please read the [Code of Conduct](/CODE_OF_CONDUCT.md) first.
-
-## 🧩 Ecosystem
-
-| Repository | What it is |
-|---|---|
-| [stremio-core](https://github.com/Stremio/stremio-core) | Rust engine: state, addon protocol, library, sync |
-| [stremio-video](https://github.com/Stremio/stremio-video) | Video player abstraction used by this UI |
-| [stremio-translations](https://github.com/Stremio/stremio-translations) | Community translations |
-| [stremio-addon-sdk](https://github.com/Stremio/stremio-addon-sdk) | Build your own addon in Node.js |
-
-## 💬 Community
-
-[Website](https://www.stremio.com) · [Blog](https://blog.stremio.com) · [Reddit](https://www.reddit.com/r/Stremio) · [X](https://x.com/stremio) · [Help center](https://stremio.zendesk.com/hc/en-us)
-
-## 📄 License
-
-Copyright © 2017-2026 Smart Code OOD. Released under the GPL-2.0 license — see [LICENSE](/LICENSE.md).
+- **OS Target:** Android TV / Google TV (minSdk 26, targetSdk 36, compileSdk 36)
+- **Toolchain:** AGP 9.1.1, Gradle 9.3.1, JDK 21
+- **Video Engine:** `androidx.media3:media3-exoplayer:1.5.1`
+- **Image Pipeline:** `io.coil-kt:coil-compose:2.7.0`

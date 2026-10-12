@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ptv4",
+    "name": "PTV 4 (People's Television)",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/PTV_Network_2017_logo.svg/320px-PTV_Network_2017_logo.svg.png",
+    "streamUrl": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43a7963a1e7dcd32eab8/index.m3u8",
+    "category": "National Networks",
+    "region": "Nationwide",
+    "quality": "1080p 60fps",
+    "isFavorite": true
+  },
+  {
+    "id": "gma7",
+    "name": "GMA Live Stream Network",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/GMA_Network_logo.svg/320px-GMA_Network_logo.svg.png",
+    "streamUrl": "https://fcc3dd31fba04fe586d1352291338546.mediatailor.us-east-1.amazonaws.com/v1/master/045477614d1c1a967c1341c5905d45d8b74ff6db/GMANetwork-Live/playlist.m3u8",
+    "category": "National Networks",
+    "region": "Nationwide",
+    "quality": "1080p",
+    "isFavorite": true
+  },
+  {
+    "id": "abscbn",
+    "name": "Kapamilya Online Live",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/ABS-CBN_Corporation_logo.svg/320px-ABS-CBN_Corporation_logo.svg.png",
+    "streamUrl": "https://live-manifest.streamguys1.com/abscbn-ph/playlist.m3u8",
+    "category": "National Networks",
+    "region": "Nationwide",
+    "quality": "1080p",
+    "isFavorite": false
+  },
+  {
+    "id": "tv5",
+    "name": "TV5 Kapatid National",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/TV5_Philippines_logo_2019.svg/320px-TV5_Philippines_logo_2019.svg.png",
+    "streamUrl": "https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8",
+    "category": "National Networks",
+    "region": "Nationwide",
+    "quality": "1080p",
+    "isFavorite": false
+  },
+  {
+    "id": "bicol_tv",
+    "name": "Uragon Bicol Balita 24/7 (Naga / Legazpi)",
+    "logoUrl": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=320&auto=format&fit=crop",
+    "streamUrl": "https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8",
+    "category": "Regional / Local",
+    "region": "Luzon",
+    "quality": "1080p",
+    "isFavorite": true
+  },
+  {
+    "id": "cltv36",
+    "name": "Central Luzon TV 36 (Pampanga)",
+    "logoUrl": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?w=320&auto=format&fit=crop",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "category": "Regional / Local",
+    "region": "Luzon",
+    "quality": "720p",
+    "isFavorite": false
+  },
+  {
+    "id": "cebu_live",
+    "name": "Sugbo TV Central Visayas (Cebu)",
+    "logoUrl": "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=320&auto=format&fit=crop",
+    "streamUrl": "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8",
+    "category": "Regional / Local",
+    "region": "Visayas",
+    "quality": "1080p",
+    "isFavorite": false
+  },
+  {
+    "id": "iloilo_live",
+    "name": "Panay News TV (Western Visayas)",
+    "logoUrl": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=320&auto=format&fit=crop",
+    "streamUrl": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8",
+    "category": "Regional / Local",
+    "region": "Visayas",
+    "quality": "720p",
+    "isFavorite": false
+  },
+  {
+    "id": "davao_tv",
+    "name": "Davao Southern Mindanao Live (Davao)",
+    "logoUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=320&auto=format&fit=crop",
+    "streamUrl": "https://d2zihajmogu5jn.cloudfront.net/sintel/master.m3u8",
+    "category": "Regional / Local",
+    "region": "Mindanao",
+    "quality": "1080p",
+    "isFavorite": true
+  },
+  {
+    "id": "cdo_tv",
+    "name": "Cagayan de Oro TV (Northern Mindanao)",
+    "logoUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=320&auto=format&fit=crop",
+    "streamUrl": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+    "category": "Regional / Local",
+    "region": "Mindanao",
+    "quality": "720p",
+    "isFavorite": false
+  },
+  {
+    "id": "anc_news",
+    "name": "ANC Global News Channel",
+    "logoUrl": "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=320&auto=format&fit=crop",
+    "streamUrl": "https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43a7963a1e7dcd32eab8/index.m3u8",
+    "category": "National News",
+    "region": "Nationwide",
+    "quality": "1080p",
+    "isFavorite": false
+  },
+  {
+    "id": "dwnews",
+    "name": "DW News 24/7 Live",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Deutsche_Welle_symbol_2012.svg/320px-Deutsche_Welle_symbol_2012.svg.png",
+    "streamUrl": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8",
+    "category": "National News",
+    "region": "International",
+    "quality": "1080p 60fps",
+    "isFavorite": false
+  },
+  {
+    "id": "france24",
+    "name": "France 24 International Live",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/France_24_logo.svg/320px-France_24_logo.svg.png",
+    "streamUrl": "https://static.france24.com/live/F24_EN_LO_HLS/live_tv.m3u8",
+    "category": "National News",
+    "region": "International",
+    "quality": "1080p",
+    "isFavorite": false
+  },
+  {
+    "id": "nasa_tv",
+    "name": "NASA TV Live Space Feed",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/320px-NASA_logo.svg.png",
+    "streamUrl": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8",
+    "category": "Entertainment",
+    "region": "International",
+    "quality": "1080p 60fps",
+    "isFavorite": true
+  },
+  {
+    "id": "redbull",
+    "name": "Red Bull TV Extreme Sports",
+    "logoUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Red_Bull_TV_logo.svg/320px-Red_Bull_TV_logo.svg.png",
+    "streamUrl": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+    "category": "Sports",
+    "region": "International",
+    "quality": "1080p",
+    "isFavorite": true
+  },
+  {
+    "id": "one_sports",
+    "name": "One Sports Live TV (PBA & PVL)",
+    "logoUrl": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=320&auto=format&fit=crop",
+    "streamUrl": "https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8",
+    "category": "Sports",
+    "region": "Nationwide",
+    "quality": "1080p",
+    "isFavorite": false
+  },
+  {
+    "id": "cinemaone",
+    "name": "Pinoy Blockbuster Cinema",
+    "logoUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=320&auto=format&fit=crop",
+    "streamUrl": "https://cph-p2p-msl.akamaized.net/hls/live/2000341/test/master.m3u8",
+    "category": "Movies",
+    "region": "Nationwide",
+    "quality": "1080p",
+    "isFavorite": false
+  },
+  {
+    "id": "myx_music",
+    "name": "MYX Southeast Asia Music",
+    "logoUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=320&auto=format&fit=crop",
+    "streamUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+    "category": "Entertainment",
+    "region": "Nationwide",
+    "quality": "1080p",
+    "isFavorite": false
+  }
+]

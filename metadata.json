@@ -1,0 +1,6 @@
+{
+  "name": "UragonTv",
+  "description": "Premium Android TV live streaming application for national, regional, and local channels with Media3 ExoPlayer and D-Pad navigation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
